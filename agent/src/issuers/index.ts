@@ -4,6 +4,7 @@ import { kolnCredentialsData, kolnIssuer } from './koln.js'
 import { medicalOrgCredentialsData, medicalOrgIssuer } from './medicalOrg.js'
 import { mvrcCredentialsData, mvrcIssuer } from './mvrc.js'
 import { nsfasCredentialsData, nsfasIssuer } from './nsfas.js'
+import { saqaCredentialsData, saqaIssuer } from './saqa.js'
 import { southAfricanGovernmentCredentialsData, southAfricanGovernmentIssuer } from './southAfricanGovernment.js'
 import {
   southAfricanReserveBankCredentialsData,
@@ -29,6 +30,7 @@ export const issuers: PlaygroundIssuerOptions[] = [
   southAfricanReserveBankIssuer,
   southAfricanRevenueServiceIssuer,
   nsfasIssuer,
+  saqaIssuer,
 ]
 
 export const issuersCredentialsData = {
@@ -43,4 +45,5 @@ export const issuersCredentialsData = {
   ...southAfricanReserveBankCredentialsData,
   ...southAfricanRevenueServiceCredentialsData,
   ...nsfasCredentialsData,
+  ...saqaCredentialsData,
 }

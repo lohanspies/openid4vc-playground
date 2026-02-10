@@ -14,7 +14,7 @@ import { loadJPEGBufferSync } from '../../utils/image.js'
 const issuanceDate = new Date(serverStartupTimeInMilliseconds - tenDaysInMilliseconds)
 const expirationDate = new Date(serverStartupTimeInMilliseconds + oneYearInMilliseconds)
 const erikaPortrait = loadJPEGBufferSync(`${import.meta.dirname}/../../../assets/erika.jpeg`)
-const johanPortrait = loadJPEGBufferSync(`${import.meta.dirname}/../../../assets/johan.jpeg`)
+const johanPortrait = loadJPEGBufferSync(`${import.meta.dirname}/../../../assets/johan.jpg`)
 
 const zaPidSdJwtDisplay = {
   locale: 'en',

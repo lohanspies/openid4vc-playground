@@ -7,7 +7,7 @@ import { oneYearInMilliseconds, serverStartupTimeInMilliseconds } from '../../ut
 import { loadJPEGBufferSync } from '../../utils/image.js'
 
 const erikaPortrait = loadJPEGBufferSync(`${import.meta.dirname}/../../../assets/erika.jpeg`)
-const johanPortrait = loadJPEGBufferSync(`${import.meta.dirname}/../../../assets/johan.jpeg`)
+const johanPortrait = loadJPEGBufferSync(`${import.meta.dirname}/../../../assets/johan.jpg`)
 
 const issuanceDate = new DateOnly()
 const expiryDate = new DateOnly('2030-01-28')
