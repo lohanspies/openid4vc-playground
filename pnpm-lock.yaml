@@ -11,6 +11,9 @@ importers:
       '@biomejs/biome':
         specifier: 2.3.11
         version: 2.3.11
+      tailwindcss:
+        specifier: ^4.1.18
+        version: 4.1.18
 
   agent:
     dependencies:

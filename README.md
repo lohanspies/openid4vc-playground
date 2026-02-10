@@ -6,9 +6,9 @@
   </picture>
 </p>
 
-<h1 align="center" ><b>DIDx Playground</b></h1>
+<h1 align="center" ><b>OpenID4VC Playground</b></h1>
 
-Welcome to the repository of Animo's DIDx Playground. This interactive playground demonstrates the use of OpenID4VC with different credential formats, such as SD-JWT VCs and mDOCs. This demo is built using [Credo](https://github.com/openwallet-foundation/credo-ts). Credo is a framework written in TypeScript for building decentralized identity services.
+Welcome to the repository of Animo's OpenID4VC Playground. This interactive playground demonstrates the use of OpenID4VC with different credential formats, such as SD-JWT VCs and mDOCs. This demo is built using [Credo](https://github.com/openwallet-foundation/credo-ts). Credo is a framework written in TypeScript for building decentralized identity services.
 
 <h4 align="center">Powered by &nbsp; 
   <picture>
@@ -106,8 +106,9 @@ pnpm dev
 
 You're welcome to contribute to this playground. Please make sure to open an issue first!
 
-This playground is open source and you're more than welcome to customize and use it to create your own DIDx Playground. If you do, an attribution to [Animo](https://animo.id) would be very much appreciated!
+This playground is open source and you're more than welcome to customize and use it to create your own OpenID4VC Playground. If you do, an attribution to [Animo](https://animo.id) would be very much appreciated!
 
 ## License
 
 This project is licensed under the Apache License Version 2.0 (Apache-2.0).
+
