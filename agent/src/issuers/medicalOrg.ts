@@ -22,8 +22,8 @@ const healthIdDisplay = {
   text_color: '#FFFFFF',
   background_color: '#61719D',
   background_image: {
-    url: `${AGENT_HOST}/assets/issuers/krankenkasse/credential.png`,
-    uri: `${AGENT_HOST}/assets/issuers/krankenkasse/credential.png`,
+    url: `${AGENT_HOST}/assets/issuers/medicalOrg/credential.png`,
+    uri: `${AGENT_HOST}/assets/issuers/medicalOrg/credential.png`,
   },
 } satisfies CredentialConfigurationDisplay
 
@@ -102,7 +102,7 @@ export const healthIdSdJwtData = {
 } satisfies StaticSdJwtSignInput
 
 // https://animosolutions.getoutline.com/doc/certificate-of-residence-attestation-KjzG4n9VG0
-export const krankenkasseIssuer = {
+export const medicalOrgIssuer = {
   tags: [healthIdDisplay.name],
   issuerId: 'a27a9f50-2b4d-4fac-99b6-9fd306641f9d',
   credentialConfigurationsSupported: [
@@ -122,16 +122,16 @@ export const krankenkasseIssuer = {
   },
   display: [
     {
-      name: 'Die Krankenkasse',
+      name: 'MedicalOrg',
       logo: {
-        url: `${AGENT_HOST}/assets/issuers/krankenkasse/issuer.png`,
-        uri: `${AGENT_HOST}/assets/issuers/krankenkasse/issuer.png`,
+        url: `${AGENT_HOST}/assets/issuers/medicalOrg/issuer.png`,
+        uri: `${AGENT_HOST}/assets/issuers/medicalOrg/issuer.png`,
       },
     },
   ],
 } satisfies PlaygroundIssuerOptions
 
-export const krankenkasseCredentialsData = {
+export const medicalOrgCredentialsData = {
   [healthIdSdJwtData.credentialConfigurationId]: healthIdSdJwtData,
   [healthIdMdocData.credentialConfigurationId]: healthIdMdocData,
 }

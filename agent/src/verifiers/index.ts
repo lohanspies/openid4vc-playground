@@ -5,6 +5,7 @@ import { kvkVerifier } from './kvk.js'
 import { openHorizonBankVerifier } from './openHorizonBank.js'
 import { pgeuVerifier } from './pgeu.js'
 import { redcarePharmacyVerifier } from './redcarePharmacy.js'
+import { southAfricanGovernmentVerifier } from './southAfricanGovernment.js'
 import type { TrustChain } from './trustChains.js'
 import { trustPilotVerifier } from './trustPilot.js'
 import { turboKeysVerifier } from './turboKeys.js'
@@ -17,6 +18,7 @@ export const verifiers = [
   trustPilotVerifier,
   openHorizonBankVerifier,
   redcarePharmacyVerifier,
+  southAfricanGovernmentVerifier,
   farmatecVerifier,
   pgeuVerifier,
   europeanUnionVerifier,

@@ -23,7 +23,7 @@ const RadioGroupItem = React.forwardRef<
     <RadioGroupPrimitive.Item
       ref={ref}
       className={cn(
-        `size-5 flex justify-center rounded-full border border-${tailwindColor} text-${tailwindColor} shadow-sm focus:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50`,
+        `size-5 flex justify-center rounded-full border border-didx text-didx shadow-sm focus:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50`,
         className
       )}
       {...props}
@@ -34,7 +34,7 @@ const RadioGroupItem = React.forwardRef<
             // Somehow tailwind hex color syntax doesn't work for all colors :(
             backgroundColor: color.startsWith('#') ? color : undefined,
           }}
-          className={cn('size-4 rounded-full', color.startsWith('#') ? undefined : `bg-${color}`)}
+          className={cn('size-4 rounded-full', color.startsWith('#') ? undefined : `bg-didx`)}
         />
       </RadioGroupPrimitive.Indicator>
     </RadioGroupPrimitive.Item>
@@ -56,8 +56,8 @@ const CardRadioItem = React.forwardRef<
       <label
         htmlFor={props.id}
         className={cn(
-          'flex flex-col h-full cursor-pointer hover:bg-gray-100 active:scale-98 duration-200 hover:shadow-xs gap-2 border border-gray-200 p-4 rounded-lg data-[state=checked]:border-accent',
-          'group-has-data-[state=checked]:border-accent group-has-data-[state=checked]:bg-accent/5',
+          'flex flex-col h-full cursor-pointer hover:bg-gray-100 active:scale-98 duration-200 hover:shadow-xs gap-2 border border-gray-200 p-4 rounded-lg data-[state=checked]:border-didx',
+          'group-has-data-[state=checked]:border-didx group-has-data-[state=checked]:bg-accent/5',
           className
         )}
       >
@@ -78,7 +78,7 @@ const CardRadioItem = React.forwardRef<
         {description && <span className="text-xs text-gray-500">{description}</span>}
         <div className="flex flex-wrap gap-2">
           {tags?.map((t) => (
-            <span key={t} className="border-accent border bg-accent text-white text-sm px-3 py-0.5 rounded-lg">
+            <span key={t} className="border-didx border bg-didx text-white text-sm px-3 py-0.5 rounded-lg">
               {t}
             </span>
           ))}
@@ -157,13 +157,13 @@ const MiniRadioItem = React.forwardRef<
       <RadioGroupPrimitive.Item
         ref={ref}
         className={cn(
-          'aspect-square h-5 w-5 rounded-full border border-accent text-accent shadow-sm focus:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50',
+          'aspect-square h-5 w-5 rounded-full border border-didx text-didx shadow-sm focus:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50',
           className
         )}
         {...props}
       >
         <RadioGroupPrimitive.Indicator className="flex items-center justify-center">
-          <Circle className="size-4 fill-accent" />
+          <Circle className="size-4 fill-didx" />
         </RadioGroupPrimitive.Indicator>
       </RadioGroupPrimitive.Item>
       <span className="text-gray-500 group-active:scale-98 font-medium">{label}</span>
@@ -184,5 +184,5 @@ const iconMap = {
 }
 const RadioGroupIcon = ({ icon }: { icon: keyof typeof iconMap }) => {
   const Icon = iconMap[icon]
-  return <Icon className="size-6 text-accent" />
+  return <Icon className="size-6 text-didx" />
 }

@@ -338,6 +338,8 @@
   --color-blueGray-900: #0f172a;
   --color-blueGray-950: #020617;
 
+  --color-didx: #6D328E;
+
   --color-background: white;
   --color-card: white;
   --color-primary-foreground: white;
@@ -350,6 +352,10 @@
 
   --scale-98: 0.98;
   --scale-102: 1.02;
+}
+
+@utility fill-didx {
+  fill: var(--color-didx);
 }
 
 /*

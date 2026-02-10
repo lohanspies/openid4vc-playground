@@ -14,7 +14,7 @@ export function Main() {
     <main key="1" className="flex flex-col gap-2 min-h-screen bg-gray-100">
       <div className="flex items-center justify-center w-full p-8">
         <div className="relative grid gap-2">
-          <Image alt="Logo" className="h-4 md:h-6 w-auto object-contain" height={256} width={256} src="/logo.svg" />
+          <Image alt="Logo" className="h-8 md:h-12 w-auto object-contain" height={512} width={512} src="/logo.svg" />
           <div className="flex w-full justify-between">
             {['P', 'L', 'A', 'Y', 'G', 'R', 'O', 'U', 'N', 'D'].map((char, _i) => (
               <span key={char} className="text-xs text-gray-500 font-medium">
@@ -45,7 +45,7 @@ export function Main() {
       <footer className="flex items-center justify-center w-full p-4 gap-8">
         <p className="text-sm text-gray-500">
           <a className="flex items-center gap-2" href="https://github.com/animo/openid4vc-playground">
-            <GitHubLogoIcon /> Playground GitHub
+            <GitHubLogoIcon /> DIDx Playground GitHub
           </a>
         </p>
         <p className="text-sm text-gray-500">

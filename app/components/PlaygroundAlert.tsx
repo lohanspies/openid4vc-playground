@@ -36,7 +36,7 @@ export function PlaygroundAlert() {
           href="https://github.com/animo/openid4vc-playground"
           rel="noreferrer"
         >
-          <GitHubLogoIcon className="inline inline-flex" /> Playground GitHub
+          <GitHubLogoIcon className="inline inline-flex" /> DIDx Playground GitHub
         </a>
         .
       </AlertDescription>

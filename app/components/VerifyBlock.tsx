@@ -273,7 +273,7 @@ export const VerifyBlock = ({ searchParams }: { searchParams: ReadonlyURLSearchP
       <form className="space-y-8 mt-4" onSubmit={onSubmitCreateRequest}>
         <div className="flex flex-col">
           <div className="flex flex-col items-start gap-2">
-            <span className="text-accent font-medium text-sm">Use Case</span>
+            <span className="text-didx font-medium text-sm">Use Case</span>
           </div>
           <RadioGroup
             className="grid  grid-cols-1 sm:grid-cols-2 gap-2 py-2 pb-4"

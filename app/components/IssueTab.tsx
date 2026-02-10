@@ -155,7 +155,7 @@ export function IssueTab({
       <form className="space-y-4" onSubmit={disabled ? undefined : onSubmitIssueCredential}>
         <div className="flex flex-col">
           <div className="flex flex-col items-start gap-2">
-            <span className="text-accent font-medium text-lg">Issuer</span>
+            <span className=" text-didx font-medium text-lg">Issuer</span>
           </div>
           <RadioGroup
             className="grid grid-cols-2 gap-2 py-2 pb-4"
@@ -195,7 +195,7 @@ export function IssueTab({
         </div>
         <div className="flex flex-col">
           <div className="flex flex-col items-start gap-2">
-            <span className="text-accent font-medium text-lg">Credential</span>
+            <span className="text-didx font-medium text-lg">Credential</span>
           </div>
           <RadioGroup
             className="grid grid-cols-2 md:grid-cols-3 gap-2 py-2 pb-4"

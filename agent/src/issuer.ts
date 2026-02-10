@@ -18,7 +18,7 @@ import { agent } from './agent.js'
 import { bdrIssuer } from './issuers/bdr.js'
 import { issuers, issuersCredentialsData } from './issuers/index.js'
 import { kolnIssuer } from './issuers/koln.js'
-import { krankenkasseIssuer } from './issuers/krankenkasse.js'
+import { medicalOrgIssuer } from './issuers/medicalOrg.js'
 import { steuernIssuer } from './issuers/steuern.js'
 import { telOrgIssuer } from './issuers/telOrg.js'
 import { getX509DcsCertificate } from './keyMethods/index.js'
@@ -426,9 +426,9 @@ export const credentialRequestToCredentialMapper: OpenId4VciCredentialRequestToC
           [bdrIssuer.credentialConfigurationsSupported[1]['dc+sd-jwt'].data.credentialConfigurationId]: eudiPidData,
           [bdrIssuer.credentialConfigurationsSupported[1].mso_mdoc.data.credentialConfigurationId]: eudiPidData,
 
-          [krankenkasseIssuer.credentialConfigurationsSupported[0]['dc+sd-jwt'].data.credentialConfigurationId]:
+          [medicalOrgIssuer.credentialConfigurationsSupported[0]['dc+sd-jwt'].data.credentialConfigurationId]:
             healthIdClaims,
-          [krankenkasseIssuer.credentialConfigurationsSupported[0].mso_mdoc.data.credentialConfigurationId]:
+          [medicalOrgIssuer.credentialConfigurationsSupported[0].mso_mdoc.data.credentialConfigurationId]:
             healthIdClaims,
 
           [steuernIssuer.credentialConfigurationsSupported[0]['dc+sd-jwt'].data.credentialConfigurationId]: taxIdClaims,

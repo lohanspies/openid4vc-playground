@@ -1,5 +1,5 @@
 import { AGENT_HOST } from '../constants.js'
-import { healthIdSdJwt } from '../issuers/krankenkasse.js'
+import { healthIdSdJwt } from '../issuers/medicalOrg.js'
 import type { PlaygroundVerifierOptions } from '../verifier.js'
 import { pidSdJwtCredential } from './util.js'
 

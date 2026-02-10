@@ -1,8 +1,18 @@
 import type { PlaygroundIssuerOptions } from '../issuer.js'
 import { bdrCredentialsData, bdrIssuer } from './bdr.js'
 import { kolnCredentialsData, kolnIssuer } from './koln.js'
-import { krankenkasseCredentialsData, krankenkasseIssuer } from './krankenkasse.js'
+import { medicalOrgCredentialsData, medicalOrgIssuer } from './medicalOrg.js'
 import { mvrcCredentialsData, mvrcIssuer } from './mvrc.js'
+import { nsfasCredentialsData, nsfasIssuer } from './nsfas.js'
+import { southAfricanGovernmentCredentialsData, southAfricanGovernmentIssuer } from './southAfricanGovernment.js'
+import {
+  southAfricanReserveBankCredentialsData,
+  southAfricanReserveBankIssuer,
+} from './southAfricanReserveBank.js'
+import {
+  southAfricanRevenueServiceCredentialsData,
+  southAfricanRevenueServiceIssuer,
+} from './southAfricanRevenueService.js'
 import { steuernCredentialsData, steuernIssuer } from './steuern.js'
 import { telOrgCredentialsData, telOrgIssuer } from './telOrg.js'
 import { utopiaGovernmentData, utopiaGovernmentIssuer } from './utopiaGovernment.js'
@@ -11,18 +21,26 @@ export const issuers: PlaygroundIssuerOptions[] = [
   bdrIssuer,
   kolnIssuer,
   steuernIssuer,
-  krankenkasseIssuer,
+  medicalOrgIssuer,
   telOrgIssuer,
   mvrcIssuer,
   utopiaGovernmentIssuer,
+  southAfricanGovernmentIssuer,
+  southAfricanReserveBankIssuer,
+  southAfricanRevenueServiceIssuer,
+  nsfasIssuer,
 ]
 
 export const issuersCredentialsData = {
   ...bdrCredentialsData,
   ...kolnCredentialsData,
   ...steuernCredentialsData,
-  ...krankenkasseCredentialsData,
+  ...medicalOrgCredentialsData,
   ...telOrgCredentialsData,
   ...mvrcCredentialsData,
   ...utopiaGovernmentData,
+  ...southAfricanGovernmentCredentialsData,
+  ...southAfricanReserveBankCredentialsData,
+  ...southAfricanRevenueServiceCredentialsData,
+  ...nsfasCredentialsData,
 }

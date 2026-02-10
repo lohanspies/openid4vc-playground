@@ -49,7 +49,7 @@ export const agent = new Agent({
       askar,
       // TODO: add postgres storage
       store: {
-        id: 'openid4vc-playground',
+        id: 'openid4vc-playground32123123',
         key: AGENT_WALLET_KEY,
       },
     }),
