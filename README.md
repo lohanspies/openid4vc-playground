@@ -90,6 +90,12 @@ Open three terminal windows, and then run the following:
 npx ngrok http 3001
 ```
 
+OR
+
+```bash
+export NGROK_AUTHTOKEN=$YOUR_AUTHTOKEN;ngrok start --config ngrok.yml --all
+```
+
 Copy the https url from the ngrok command and set that as the `AGENT_HOST`
 
 ```bash
@@ -100,6 +106,12 @@ AGENT_HOST=https://ebcf-161-51-75-237.ngrok-free.app pnpm dev
 ```bash
 cd app
 pnpm dev
+```
+
+OR 
+
+```bash
+NEXT_PUBLIC_API_URL=https://ebcf-161-51-75-237.ngrok-free.app pnpm dev
 ```
 
 ## Contributing
